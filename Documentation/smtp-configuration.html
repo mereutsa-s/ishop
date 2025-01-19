@@ -1,0 +1,291 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+<head>
+    <title>Ishop - Documentation</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
+    <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:title" name="og:title" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Ishop - Documentation">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+</head>
+<body>
+<div data-server-rendered="true" id="__nuxt"><!---->
+    <div id="__layout">
+        <div class="smtp-configuration">
+            <header>
+                <div class="container">
+                    <div class="flex sided v-center">
+                        <div class="flex j-start v-center">
+                            <button data-ignore="sidebar" class="sidebar-btn"><i class="icon no-click menu-icon"> </i>
+                            </button>
+                            <a href="./index.html" aria-current="page"
+                               class="logo nuxt-link-exact-active nuxt-link-active">
+                                <img src="./assets/images/logo-black.svg" alt="Site Logo"></a></div>
+                        <div class="right-area">
+                            <a href="https://codecanyon.net/item/ishop-multivendor-laravel-vue-ecommerce-cms/43235652"
+                               target="_blank" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="flex flex-sm">
+                        <div id="sidebar" class="sidebar">
+                            <ul>
+                                <li class="title">Overview</li>
+                                <li>
+                                    <a href="./index.html"
+                                       class="nuxt-link-exact-active nuxt-link-active">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="./folder-structure.html">Folder structure</a>
+                                </li>
+                                <li class="title">Installation</li>
+
+                                <li>
+                                    <a href="./how-to-install.html">Installing, Updating & Activating</a>
+                                </li>
+                                <li>
+                                    <a href="./server-side-rendering.html">Server side rendering(Optional)</a>
+                                </li>
+                                <li>
+                                    <a href="./admin-panel-in-subdomain.html">Admin panel in Subdomain(Optional)</a>
+                                </li>
+                                <li>
+                                    <a href="./how-to-install-in-vps-server.html">Install and update in VPS server(Optional)</a>
+                                </li>
+                                <li>
+                                    <a href="./how-to-install-SSL-in-vps-server.html">Install SSL in VPS server(Optional)</a>
+                                </li>
+
+                                <li class="title">Registration & login</li>
+                                <li class="active">
+                                    <a href="./smtp-configuration.html">SMTP configuration</a>
+                                </li>
+                                <li>
+                                    <a href="./login-with-google.html">Login with Google</a>
+                                </li>
+                                <li>
+                                    <a href="./login-with-facebook.html">Login with Facebook</a>
+                                </li>
+
+                                <li class="title">Configuration & setup</li>
+                                <li>
+                                    <a href="./translate.html">Translate/Multi Language</a>
+                                </li>
+
+                                <li>
+                                    <a href="./countries-currencies.html">Countries & Currency List</a>
+                                </li>
+                                <li>
+                                    <a href="./file-upload.html">File upload</a>
+                                </li>
+                                <li>
+                                    <a href="./frontend.html">Frontend</a>
+                                </li>
+                                <li>
+                                    <a href="./api-configuration.html">API configuration</a>
+                                </li>
+                                <li>
+                                    <a href="./google-cloud-storage.html">Google cloud storage(Optional)</a>
+                                </li>
+
+
+                                <li class="title">Payment gateway</li>
+                                <li>
+                                    <a href="./paypal.html">Paypal</a>
+                                </li>
+                                <li>
+                                    <a href="./stripe.html">Stripe</a>
+                                </li>
+                                <li>
+                                    <a href="./razorpay.html">Razorpay</a>
+                                </li>
+
+
+                                <li class="title">Ishop setup</li>
+                                <li>
+                                    <a href="./admin-panel.html">Admin panel</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content">
+
+                            <h3 class="title">SMTP configuration</h3>
+                            <div class="section">
+                                <h4 class="semi-title">SMTP configuration form cPanel</h4>
+                                <p>To send the confirmation email and forgot password functionality you have to
+                                    configure a SMTP server.</p>
+
+
+                                <ol>
+                                    <li>Login to your <b>cPanel</b>. Find Email Accounts.</li>
+                                    <img src="./assets/images/email-account.jpg" class="img">
+                                    <li>Click Create</li>
+                                    <img src="./assets/images/create-email.jpg" class="img">
+                                    <li>Fill up the form and create an email account. Copy the password</li>
+                                    <img src="./assets/images/email-form.jpg" class="img">
+                                    <li>Click connected device</li>
+                                    <img src="./assets/images/connected-device.jpg" class="img">
+                                    <li>Here is two sections for the setting.
+                                        Use SSL if you have SSL in your server other wise use non-ssl. Save all the data
+                                        for
+                                        later use.
+                                    </li>
+                                    <img src="./assets/images/email-credentials.jpg" class="img">
+                                </ol>
+
+
+                            </div>
+                            <div class="section">
+                                <h4 class="semi-title">Google SMTP server configuration</h4>
+
+                                <p>You can use <b>Google's SMTP</b> server for free.</p>
+
+
+                                <ol>
+
+                                    <li>Login to your Gmail account.</li>
+                                    <li>Then visit the link:
+                                        <a href="https://myaccount.google.com/security" target="_blank" class="link">
+                                            https://myaccount.google.com/security</a></li>
+                                    <li>In the security page, turn on the 2-step verification.</li>
+                                    <img src="./assets/images/2-step-verification.jpg" class="img">
+
+
+                                    <li>Select App Passwords. You may need to sign in.
+                                        If you don’t have this option, it might be because:
+                                    </li>
+
+                                    <ul>
+                                        <li>2-Step Verification is not set up for your account.</li>
+                                        <li>2-Step Verification is only set up for security keys.</li>
+
+                                        <li>Your account is through work, school, or other organization.</li>
+                                        <li>You turned on Advanced Protection.</li>
+                                    </ul>
+
+                                    <img src="./assets/images/app-password-2.jpg" class="img">
+
+                                    <li>At the bottom, choose Select <b>Mail</b> for app and choose Select
+                                        <b>Other(Custom name)</b> for device and then Generate.
+                                    </li>
+
+                                    <img src="./assets/images/app-password-3.jpg" class="img">
+
+                                    <li>The App Password is the 16-character code in the yellow bar on your device.</li>
+
+                                    <img src="./assets/images/app-password-4.jpg" class="img">
+
+                                    <li>Save the password for later use.</li>
+
+                                    <li>Tap Done.</li>
+
+
+                                    <li>Also visit the link:
+                                        <a href="https://accounts.google.com/b/0/DisplayUnlockCaptcha" target="_blank"
+                                           class="link">https://accounts.google.com/b/0/DisplayUnlockCaptcha</a></li>
+                                    <li>Enable it.</li>
+                                    <img src="./assets/images/captcha-enabled.jpg" class="img">
+
+                                </ol>
+
+                            </div>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Setting the SMTP configuration</h4>
+
+                                <p>Now it's time to put the SMTP configuration in the server</p>
+
+
+                                <ol>
+                                    <li>Log in to your admin panel.</li>
+                                    <li>Go to <b>Settings > SMTP Setting</b></li>
+
+                                    <img src="./assets/images/smtp-2.jpg" class="img">
+
+                                    <li>Change the <b>SMTP Host</b>, <b>SMTP Port</b>, <b>SMTP Encryption</b>,
+                                        <b>SMTP Username</b>, <b>SMTP Password</b> and <b>Mail From</b>.
+                                    </li>
+
+
+                                    <ul>
+                                        <li><b>SMTP Host</b>: Name of the host. eg. <i>smtp.yourdomain.com</i>. For
+                                            google the
+                                            host will be <i>smtp.google.com</i></li>
+                                        <li><b>SMTP Port</b>: SMTP port address. Usually, non SSL port is <i>587</i> and
+                                            SSL port
+                                            is <i>465</i></li>
+                                        <li><b>SMTP Username</b>: Username is the email address is being used to
+                                            configure the
+                                            SMTP server.
+                                            eg. <i>noreply@gmail.com</i>. For google, use the gmail address here.
+                                        </li>
+                                        <li><b>SMTP Password</b>: Password set while configure the SMTP server.</li>
+                                        <li><b>SMTP Encryption</b>: Usually, non SSL is <i>tls</i> and SSL is <i>ssl</i>.
+                                        </li>
+                                        <li><b>Mail From</b>: the email address is being used to configure the
+                                            SMTP
+                                            server.
+                                            eg. <i>noreply@gmail.com</i>. For google, use the gmail address here.
+                                        </li>
+                                    </ul>
+
+
+
+                                </ol>
+
+
+                            </div>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Clearing cache</h4>
+                                <p>Now it's time to clear the cache of the backend.</p>
+                                <ol>
+
+                                    <li>Open <b>admin.yourdomain.com/api/clear-cache</b>
+                                        in the browser. Cache has been cleared.
+                                    </li>
+
+                                </ol>
+
+
+                                <p>You can also clear the cache from the admin panel also.</p>
+
+                                <ol>
+
+                                    <li>Login to your <b>Admin panel</b>.</li>
+                                    <li>Go to <b>Setting</b> > <b>Clear cache</b>.</li>
+                                    <li>And click <b>Clear cache</b> button.
+                                        Cache has been cleared.
+                                    </li>
+
+
+                                    <img src="./assets/images/smtp-3.jpg" class="img">
+                                </ol>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="link-hover">
+                <div class="container"><p class="ptb-15 color-white mt-10 b-t center-text">
+                    © 2023 - All rights reserved by Ishop
+                </p></div>
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>

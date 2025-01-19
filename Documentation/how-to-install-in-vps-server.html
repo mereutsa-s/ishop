@@ -1,0 +1,490 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+<head>
+    <title>Ishop - Documentation</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
+    <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:title" name="og:title" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Ishop - Documentation">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+</head>
+<body>
+<div data-server-rendered="true" id="__nuxt">
+    <div id="__layout">
+        <div class="login-with-facebook">
+            <header>
+                <div class="container">
+                    <div class="flex sided v-center">
+                        <div class="flex j-start v-center">
+                            <button data-ignore="sidebar" class="sidebar-btn"><i class="icon no-click menu-icon"> </i>
+                            </button>
+                            <a href="./index.html" aria-current="page"
+                               class="logo nuxt-link-exact-active nuxt-link-active">
+                                <img src="./assets/images/logo-black.svg" alt="Site Logo"></a></div>
+                        <div class="right-area">
+                            <a href="https://codecanyon.net/item/ishop-multivendor-laravel-vue-ecommerce-cms/43235652"
+                               target="_blank" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="flex flex-sm">
+                        <div id="sidebar" class="sidebar">
+                            <ul>
+                                <li class="title">Overview</li>
+                                <li>
+                                    <a href="./index.html"
+                                       class="nuxt-link-exact-active nuxt-link-active">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="./folder-structure.html">Folder structure</a>
+                                </li>
+                                <li class="title">Installation</li>
+                                <li>
+                                    <a href="./how-to-install.html">Installing, Updating & Activating</a>
+                                </li>
+                                <li>
+                                    <a href="./server-side-rendering.html">Server side rendering(Optional)</a>
+                                </li>
+                                <li>
+                                    <a href="./admin-panel-in-subdomain.html">Admin panel in Subdomain(Optional)</a>
+                                </li>
+                                <li class="active">
+                                    <a href="./how-to-install-in-vps-server.html">
+                                        Install and update in VPS server(Optional)</a>
+                                </li>
+                                <li>
+                                    <a href="./how-to-install-SSL-in-vps-server.html">Install SSL in VPS
+                                        server(Optional)</a>
+                                </li>
+
+
+                                <li class="title">Registration & login</li>
+                                <li>
+                                    <a href="./smtp-configuration.html">SMTP configuration</a>
+                                </li>
+                                <li>
+                                    <a href="./login-with-google.html">Login with Google</a>
+                                </li>
+                                <li>
+                                    <a href="./login-with-facebook.html">Login with Facebook</a>
+                                </li>
+
+                                <li class="title">Configuration & setup</li>
+                                <li>
+                                    <a href="./translate.html">Translate/Multi Language</a>
+                                </li>
+
+                                <li>
+                                    <a href="./countries-currencies.html">Countries & Currency List</a>
+                                </li>
+                                <li>
+                                    <a href="./file-upload.html">File upload</a>
+                                </li>
+                                <li>
+                                    <a href="./frontend.html">Frontend</a>
+                                </li>
+                                <li>
+                                    <a href="./api-configuration.html">API configuration</a>
+                                </li>
+                                <li>
+                                    <a href="./google-cloud-storage.html">Google cloud storage(Optional)</a>
+                                </li>
+
+
+                                <li class="title">Payment gateway</li>
+                                <li>
+                                    <a href="./paypal.html">Paypal</a>
+                                </li>
+                                <li>
+                                    <a href="./stripe.html">Stripe</a>
+                                </li>
+                                <li>
+                                    <a href="./razorpay.html">Razorpay</a>
+                                </li>
+
+
+                                <li class="title">Ishop setup</li>
+                                <li>
+                                    <a href="./admin-panel.html">Admin panel</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="content">
+
+                            <h3 class="title">How to Update in VPS server(Optional)</h3>
+
+                            <div class="section">
+                                <ol>
+                                    <li>Open the package folder</li>
+                                    <li>You will find Update_Docker.zip file here.</li>
+                                    <li>Unzip the Update_Docker.zip file in the root your server</li>
+
+                                    <li>
+                                        Now please run the following command in order to build and run the project.
+                                        <code>sudo docker-compose up -d --build</code>
+                                    </li>
+
+
+                                    <li>Yor site will be updated</li>
+                                </ol>
+                            </div>
+
+                            <h3 class="title">How to Install in VPS server(Optional)</h3>
+
+                            <div class="section">
+                                <p>Installing in VPS server is fully optional.
+                                You can skip this page if you don't have any knowledge on Docker.</p>
+                            </div>
+
+                            <h4 class="semi-title">Requirements</h4>
+                            <p>Server must have these pre installed:</p>
+                            <ul>
+                                <li>Unzip</li>
+                                <li>Docker</li>
+                                <li>Docker compose</li>
+                            </ul>
+
+                            <div class="section">
+                                <p>Please create a machine and <b>SSH</b> to your machine.</p>
+                                <p>Process of creating a machine varies server to server. If you are unable to figure
+                                    out
+                                    the process, please contact the support team of your server. They will help you to
+                                    create
+                                    a machine and tell you the process of the <b>SSH</b>.</p>
+                            </div>
+
+                            <div class="section">
+                                <h4 class="semi-title">Unzip</h4>
+                                <p>Please run the following command in order to install unzip</p> <code>sudo apt-get
+                                install unzip</code>
+
+                            </div>
+
+                            <div class="section">
+                                <h4 class="semi-title">Docker</h4>
+
+                                <p>Please run the following command in order to install docker</p>
+                                <div>
+                                    <code>sudo apt update</code>
+                                </div>
+                                <div>
+                                    <code>sudo apt install apt-transport-https ca-certificates curl
+                                        software-properties-common</code></div>
+                                <div>
+                                    <code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add
+                                        -</code>
+                                </div>
+                                <div>
+                                    <code>sudo add-apt-repository "deb [arch=amd64]
+                                        https://download.docker.com/linux/ubuntu bionic
+                                        stable"</code>
+                                </div>
+                                <div>
+                                    <code>sudo apt update</code>
+                                </div>
+                                <div>
+                                    <code>apt-cache policy docker-ce</code></div>
+                                <div><code>sudo apt install docker-ce</code></div>
+                                <p>If this command fails to install <b>docker</b>, please run following two commands
+                                    then try to run the command again.</p>
+                                <div><code>curl -O
+                                    https://download.docker.com/linux/debian/dists/buster/pool/stable/amd64/containerd.io_1.4.3-1_amd64.deb</code>
+                                </div>
+                                <div><code>sudo apt install ./containerd.io_1.4.3-1_amd64.deb</code></div>
+                                <div><code>sudo apt install docker-ce</code></div>
+                                <div><code>sudo systemctl status docker</code></div>
+                            </div>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Docker compose</h4>
+                                <p>Please run the following command in order to install docker compose</p>
+                                <div>
+                                    <code>sudo curl -L
+                                        https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname
+                                        -s`-`uname -m` -o /usr/local/bin/docker-compose</code></div>
+                                <div>
+                                    <code>sudo chmod +x /usr/local/bin/docker-compose</code>
+                                </div>
+                                <div>
+                                    <code>docker-compose --version</code>
+                                </div>
+                            </div>
+
+
+                            <div class="section">
+                                <h3 class="semi-title">Installing the app</h3>
+
+
+                                <p>After installing those apps please follow these steps.</p>
+
+                                <ol>
+                                    <li>Make zip from <b><i>Docker</i></b>.</li>
+                                    <li>Upload it to your server.</li>
+                                    <li>unzip it.</li>
+                                    <code>unzip Docker.zip</code>
+                                    <li>Go to the project by running the following command.</li>
+                                    <code>cd Docker</code>
+
+                                </ol>
+
+                            </div>
+
+
+                            <div class="section">
+
+                                <h4 class="semi-title">User adding for docker</h4>
+
+                                <p>Now please run the following command in order to add as user for the docker.</p>
+                                <div><code>sudo groupadd docker</code></div>
+                                <div><code>sudo usermod -aG docker $USER</code></div>
+                            </div>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Backend configuration</h4>
+
+                                <ol>
+                                    <li>Now open the <b><i>.env</i></b> file by running the following command.</li>
+                                    <code>nano .env</code>
+                                    <li>Change the value of <b><i>APP_URL</i></b> and <b><i>CLIENT_BASE_URL</i></b>.
+                                    </li>
+
+
+                                    <ul>
+                                        <li><b>APP_URL</b>: URL of your admin panel. eg.
+                                            <i>http://admin.yourdomain.com</i></li>
+                                        <li><b>CLIENT_BASE_URL</b>: URL of your frontend. eg. <i>http://www.yourdomain.com</i>
+                                        </li>
+                                    </ul>
+
+
+                                    <li>Now save the file by running the following commands.</li>
+
+                                    <div><code>Type <b><i>ctrl + x</i></b></code></div>
+                                    <div><code>Type <b><i>Shift + y</i></b></code></div>
+                                    <div><code>Press <b><i>Enter</i></b></code></div>
+
+                                </ol>
+
+
+                                <img src="./assets/images/bk-6.jpg" class="img" alt="">
+
+                            </div>
+
+                            <div class="section">
+                                <h4 class="semi-title">Frontend Configuration</h4>
+
+
+                                <ol>
+                                    <li>
+                                        Please go back to the root of the project by running the following command.
+                                    </li>
+
+                                    <code>cd ..</code>
+
+                                    <li>Now please run the following command in order to go inside the
+                                        <b><i>frontend</i></b>
+                                        folder.
+                                    </li>
+
+                                    <code>cd frontend</code>
+
+                                    <li>Now open the <b><i>.env</i></b> file by running the following command
+                                    </li>
+
+                                    <code>nano .env</code>
+
+                                    <li>
+                                        Change the <b>API_BASE</b> form <b><i>.env</i></b>
+                                        file
+                                    </li>
+
+
+                                    <ul>
+                                        <li><b>API_BASE</b>: Root Url of your admin panel. eg. <i>http://www.yourdomain.com</i>
+                                        </li>
+                                    </ul>
+
+                                    <li>Please don't forget to add <b>/</b> at the end of the URL</li>
+
+
+                                    <li>Now save the file by running the following commands.</li>
+
+                                    <div><code>Type <b><i>ctrl + x</i></b></code></div>
+                                    <div><code>Type <b><i>Shift + y</i></b></code></div>
+                                    <div><code>Press <b><i>Enter</i></b></code></div>
+
+                                </ol>
+
+
+                            </div>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">NGINX Configuration</h4>
+
+
+                                <ol>
+                                    <li>Please go back to the root of the project by running the following command.</li>
+                                    <code>cd ..</code>
+                                    <li>Now run the following command in order to go inside the <b><i>nginx
+                                        configuration</i></b> folder.
+                                    </li>
+
+                                    <code>cd nginx/config</code>
+
+                                    <li>Now edit the <b><i>default.conf</i></b> file by running.</li>
+                                    <code>nano default.conf</code>
+                                    <li>Navigate through <b>Down arrow</b> and find <b>server_name</b>. You will find
+                                        the <b>server_name</b>
+                                        in two places.
+                                    </li>
+
+
+                                    <li>Put your <b>domain</b> url in the first occurrence</li>
+                                    <li>Put your <b>admin url</b> in the second occurrence</li>
+
+
+                                    <li>Now save the file by running the following commands.</li>
+
+                                    <div><code>Type <b><i>ctrl + x</i></b></code></div>
+                                    <div><code>Type <b><i>Shift + y</i></b></code></div>
+                                    <div><code>Press <b><i>Enter</i></b></code></div>
+
+
+                                </ol>
+                                <img src="./assets/images/nginx-111.jpg" class="img" alt="">
+                                <img src="./assets/images/nginx-112.jpg" class="img" alt="">
+
+
+                            </div>
+
+
+                            <div class="section">
+
+                                <h4 class="semi-title">Setting permission to the <b>storage</b> folder
+                                </h4>
+                                <p>Now please run the following command in order to go inside the <b><i>backend</i></b>
+                                    folder.</p>
+                                <div><code>cd backend</code></div>
+                                <p>Now please run the following command in order to set permission to storage
+                                    folder.</p>
+                                <div><code>sudo chown -R $USER:www-data storage</code></div>
+                                <div><code>chmod -R 775 storage</code></div>
+
+                                <div><code>sudo chown -R $USER:www-data bootstrap/cache</code></div>
+                                <div><code>chmod -R 775 bootstrap/cache</code></div>
+
+                                <div><code> sudo chmod -R 777 public/uploads</code></div>
+                            </div>
+
+                            <div class="section">
+                                <h4 class="semi-title">Run and build docker</h4>
+                                <p>Now please run the following command in order to build and run the project.</p>
+                                <div><code>sudo docker-compose up -d --build</code></div>
+                            </div>
+
+
+                            <div class="section">
+
+                                <h4 class="semi-title">Database migration and passport install</h4>
+
+
+                                <ol>
+                                    <li>Now its time to run the database migrations in the backend.
+                                        Please Run the following command to start to go to the app image:
+                                    </li>
+
+                                    <code>docker-compose exec app bash</code>
+
+
+                                    <li>Please <b>Clear the cache</b> by running these commands:</li>
+
+                                    <div><code>php artisan route:cache</code></div>
+                                    <div><code>php artisan route:clear</code></div>
+
+                                    <div><code>php artisan config:cache</code></div>
+                                    <div><code>php artisan config:clear</code></div>
+
+                                    <div><code>php artisan cache:clear</code></div>
+                                    <code>php artisan optimize</code>
+
+
+                                    <li>Run the migration by running these commands:</li>
+
+                                    <div><code>php artisan migrate:fresh --seed</code></div>
+                                    <code>php artisan passport:install</code>
+
+
+                                    <li>Please <b>Clear the cache</b> one last time by running the commands above (Step:
+                                        2).
+                                    </li>
+
+
+                                    <li>Please <b>exit</b> from the container</li>
+                                    <code>exit</code>
+
+
+                                </ol>
+
+                            </div>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Rebuild and run docker</h4>
+
+                                <ol>
+                                    <li>Please go back to the root of the project by running the following command.</li>
+                                    <code>cd ..</code>
+                                    <li>Now please run the following command in order to build and run the project.</li>
+                                    <div><code>sudo docker-compose down</code></div>
+                                    <code>sudo docker-compose up -d --build</code>
+
+
+                                    <li>You can access the website and the admin panel
+                                        from the <b>URL</b> in the browser now. eg.
+                                        <b>http://yourdomain.com</b> and
+                                        <b>http://admin.yourdomain.com</b>
+                                    </li>
+
+
+                                    <li>Use these credentials below to login to the admin panel</li>
+                                    <ul>
+                                        <li>Admin email: <b>admin@mail.com</b></li>
+                                        <li>Admin password: <b>123456</b></li>
+                                    </ul>
+
+                                    <li>Please <b>Clear the cache</b> one last time by running the commands above
+                                        (Last paragraph, Step: 2).
+                                    </li>
+
+                                </ol>
+
+                            </div>
+                            <h4>
+                                <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose"
+                                   class="link">
+                                    If you find any difficulty installing, please do visit this link</a></h4></div>
+                    </div>
+                </div>
+            </main>
+            <footer class="link-hover">
+                <div class="container"><p class="ptb-15 color-white mt-10 b-t center-text">
+                    © 2023 - All rights reserved by Ishop
+                </p></div>
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>

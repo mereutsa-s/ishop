@@ -1,0 +1,56 @@
+@import "variables.styl"
+
+.rd-container {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.rd-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.rd-checkmark {
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+
+.rd-container:hover input ~ .rd-checkmark {
+  background-color: #ccc;
+}
+
+.rd-container input:checked ~ .rd-checkmark {
+  border-color: primary-color;
+}
+
+.rd-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.rd-container input:checked ~ .rd-checkmark:after {
+  display: block;
+}
+
+.rd-container .rd-checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: primary-color;
+}

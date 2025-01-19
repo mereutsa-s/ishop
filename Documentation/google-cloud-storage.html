@@ -1,0 +1,363 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+<head>
+    <title>Ishop - Documentation</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
+    <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:title" name="og:title" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Ishop - Documentation">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+</head>
+<body>
+<div data-server-rendered="true" id="__nuxt"><!---->
+    <div id="__layout">
+        <div class="how-to-install-in-cpanel">
+            <header>
+                <div class="container">
+                    <div class="flex sided v-center">
+                        <div class="flex j-start v-center">
+                            <button data-ignore="sidebar" class="sidebar-btn"><i class="icon no-click menu-icon"> </i>
+                            </button>
+                            <a href="./index.html" aria-current="page"
+                               class="logo nuxt-link-exact-active nuxt-link-active">
+                                <img src="./assets/images/logo-black.svg" alt="Site Logo"></a></div>
+                        <div class="right-area">
+                            <a href="https://codecanyon.net/item/ishop-multivendor-laravel-vue-ecommerce-cms/43235652"
+                               target="_blank" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="flex flex-sm">
+                        <div id="sidebar" class="sidebar">
+                            <ul>
+                                <li class="title">Overview</li>
+                                <li>
+                                    <a href="./index.html"
+                                       class="nuxt-link-exact-active nuxt-link-active">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="./folder-structure.html">Folder structure</a>
+                                </li>
+                                <li class="title">Installation</li>
+
+                                <li>
+                                    <a href="./how-to-install.html">Installing, Updating & Activating</a>
+                                </li>
+                                <li>
+                                    <a href="./server-side-rendering.html">Server side rendering(Optional)</a>
+                                </li>
+                                <li>
+                                    <a href="./admin-panel-in-subdomain.html">Admin panel in Subdomain(Optional)</a>
+                                </li>
+                                <li>
+                                    <a href="./how-to-install-in-vps-server.html">Install and update in VPS server(Optional)</a>
+                                </li>
+                                <li>
+                                    <a href="./how-to-install-SSL-in-vps-server.html">Install SSL in VPS server(Optional)</a>
+                                </li>
+
+                                <li class="title">Registration & login</li>
+                                <li>
+                                    <a href="./smtp-configuration.html">SMTP configuration</a>
+                                </li>
+                                <li>
+                                    <a href="./login-with-google.html">Login with Google</a>
+                                </li>
+                                <li>
+                                    <a href="./login-with-facebook.html">Login with Facebook</a>
+                                </li>
+
+
+                                <li class="title">Configuration & setup</li>
+                                <li>
+                                    <a href="./translate.html">Translate/Multi Language</a>
+                                </li>
+
+                                <li>
+                                    <a href="./countries-currencies.html">Countries & Currency List</a>
+                                </li>
+                                <li>
+                                    <a href="./translate.html">Translate/Multi Language</a>
+                                </li>
+
+                                <li>
+                                    <a href="./countries-currencies.html">Countries & Currency List</a>
+                                </li>
+                                <li>
+                                    <a href="./file-upload.html">File upload</a>
+                                </li>
+                                <li>
+                                    <a href="./frontend.html">Frontend</a>
+                                </li>
+                                <li>
+                                    <a href="./api-configuration.html">API configuration</a>
+                                </li>
+
+                                <li class="active">
+                                    <a href="./google-cloud-storage.html">Google cloud storage(Optional)</a>
+                                </li>
+
+
+                                <li class="title">Payment gateway</li>
+                                <li>
+                                    <a href="./paypal.html">Paypal</a>
+                                </li>
+                                <li>
+                                    <a href="./stripe.html">Stripe</a>
+                                </li>
+                                <li>
+                                    <a href="./razorpay.html">Razorpay</a>
+                                </li>
+
+
+                                <li class="title">Ishop setup</li>
+                                <li>
+                                    <a href="./admin-panel.html">Admin panel</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content">
+
+
+                            <h3 class="title">Google cloud storage(Optional)</h3>
+
+                            <p>If you want to use Google cloud storage to save and serve the image
+                                assets, please follow this section. Otherwise you can skip. By default,
+                                image assets are being serving in the project.
+                            </p>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Creating Bucket</h4>
+
+                                <ol>
+                                    <li>
+                                        Go to <a href="https://console.cloud.google.com/">https://console.cloud.google.com/</a>
+                                        and login.
+                                    </li>
+                                    <li>Go to <b>Cloud Storage > Bucket</b>.</li>
+
+                                    <img src="./assets/images/bucket-1.jpg" class="img" alt="">
+
+
+                                    <li>Click <b>Create</b>.</li>
+
+
+                                    <li>Fill up a <b>Name</b>.</li>
+                                    <li>Click <b>Continue</b>.</li>
+                                    <li>Keep clicking <b>Continue</b>.</li>
+                                    <li>Make everything default.</li>
+                                    <li>And create a bucket.</li>
+
+
+                                    <li><b>Uncheck </b> Enforce public access prevention on this bucket.</li>
+
+                                    <img src="./assets/images/bucket-2.jpg" class="img" alt="">
+
+
+                                    <li>And click <b>Confirm</b>.</li>
+
+                                    <li>Your bucket has been created.</li>
+                                    <li>We are serving the images from a folder (<b>uploads</b>).
+                                        So, please create a folder inside the bucket. Name the folder
+                                        <b>uploads</b>.
+                                    </li>
+
+                                </ol>
+                            </div>
+
+                            <div class="section">
+                                <h4 class="semi-title">Giving permission</h4>
+
+                                <ol>
+                                    <li>Go back to the bucket and check the checkbox.</li>
+
+
+                                    <li>Click on <b>Permissions</b>.</li>
+
+                                    <li>Click on <b>SWITCH TO FINE-GRAINED</b> from Access control section.</li>
+
+                                    <img src="./assets/images/bucket-3.jpg" class="img" alt="">
+
+                                    <li>Click on <b>Fine-grained</b> from the pop up and click <b>Save</b>.</li>
+
+
+                                    <li>Now click on <b>ADD PRINCIPAL</b>.</li>
+
+                                    <img src="./assets/images/bucket-4.jpg" class="img" alt="">
+
+
+                                    <li>In the new principal field, put
+                                        <b>AllUsers</b>.
+                                    </li>
+
+                                    <li>In the select a role section, select
+                                        <b>Cloud Storage > Storage Object viewer</b>.
+                                    </li>
+
+                                    <img src="./assets/images/bucket-5.jpg" class="img" alt="">
+
+
+                                    <li>Now save and click <b>ALLOW PUBLIC ACCESS</b>.</li>
+
+                                    <li>Your bucket is now publicly accessible.
+                                        You can access the files publicly from the bucket now.
+                                    </li>
+                                </ol>
+
+                            </div>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Setting up</h4>
+                                <ol>
+                                    <li>Login to Admin panel and go to <b>Setting > Media Storage</b> page.</li>
+                                    <li>Select <b>Media Storage</b> to <b>GCS</b></li>
+                                    <li>Fill the <b>Thumb Prefix</b> Value. This value will be
+                                        used in prefix of the name of the <b>Thumb image</b>. As a thumb images is
+                                        generated
+                                        while uploading an image from the admin panel.
+
+                                    </li>
+                                    <li>Fill the <b>Default Image</b> field. This is the name of the defult image.
+                                        If any image got missing, this image will be used.
+                                    </li>
+
+                                    <li>Put your the URL of your bucket in the<b>CDN Url</b> field.
+                                        eg. https://storage.googleapis.com/test-ishop/uploads/
+                                    </li>
+
+
+                                    <li>To get the value of <b>Google Cloud Project ID</b>,
+                                        go to <b>Cloud Storage > Bucket</b>.
+                                    </li>
+
+                                    <li>Click on the project dropdown from the header.</li>
+                                    <li>A pop up will be open. Copy the ID from here. and paste it in the
+                                        <b>Google Cloud Project ID</b> field in the admin panel.
+                                    </li>
+
+                                    <img src="./assets/images/bucket-6.jpg" class="img" alt="">
+
+                                    <li>Put the bucket name in the <b>Google Cloud Storage Bucket</b> field.</li>
+                                    <li>And put the folder name inside the bucket in the
+                                        <b>Google Cloud Storage Path Prefix</b> field. eg. uploads
+
+                                    </li>
+                                    <li>Click Save.</li>
+
+                                </ol>
+
+                            </div>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Service Account set up</h4>
+                                <ol>
+                                    <li>Log in to the <b>Google Cloud Console</b>.</li>
+                                    <li>Navigate to the <b>IAM & Admin page</b>.</li>
+                                    <li>Click on <b>"Service accounts"</b> on the left-hand side menu.</li>
+                                    <li>All the service account is listed here. Initially one service account will be found here.
+                                        Click on on that from here.</li>
+
+                                    <li>If there is no service account here,
+                                        Click on the <b>"Create service account"</b> button at the top of the page.
+                                    Enter a name for your service account and optionally provide a description.
+                                    Choose a role for your service account. For Google Cloud Storage, you can choose the
+                                        <b>"Storage Object Creator"</b> or
+                                        <b>"Storage Object Admin"</b> role depending on the level of
+                                    access you want to grant to the service account.</li>
+                                    <li>Click on the <b>"Create"</b> button to create the service account.</li>
+                                    <li>After the service account is created, click on the <b>"Actions"</b> button next to the
+                                        service account and choose <b>"Create key"</b>.</li>
+                                    <li>Choose the key type as <b>"JSON"</b> and click on the <b>"Create"</b> button.
+                                        This will download a
+                                        JSON file containing the private key for your service account.</li>
+
+                                    <li>Put the contents of the files in the <b>service-account.json</b> file
+                                        from the root of your project.
+                                    </li>
+
+                                    <img src="./assets/images/bucket-7.jpg" class="img" alt="">
+                                </ol>
+
+                            </div>
+
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Use a subdomain as CDN URL(Optional)</h4>
+                                <p>If you want to use a subdomain instead of the google cloud storage URL,
+                                    Please follow the steps.
+                                </p>
+
+                                <ol>
+                                    <li>Log in to the <b>Google Cloud Console</b>.</li>
+                                    <li>Navigate to the <b>Network Services > Load Balancing</b>.</li>
+                                    <li>Click on <b>CREATE LOAD BALANCER</b> on the header.</li>
+
+
+
+                                    <li>Click <b>START CONFIGURATION</b> from the <b>HTTP(S) Load Balancing</b></li>
+                                    <li>Click <b>CONTINUE</b>. Keep everything default.</li>
+
+                                    <li>Put a name. Protocol should be <b>HTTP</b></li>
+                                    <li>In the <b>IP ADDRESS</b> field, click on <b>CREATE IP ADDRESS</b></li>
+                                    <li>Put a name here. Click on <b>Reserve</b></li>
+
+
+                                    <li>Now click on <b>ADD FRONTEND IP AND PORT</b></li>
+                                    <li>Put a name. Protocol should be <b>HTTPS</b></li>
+                                    <li>In the <b>IP ADDRESS</b> field, Choose the reserved IP address you created before.</li>
+                                    <li>In the <b>Certificate</b> field, Click <b>CREATE A NEW CERTIFICATE</b>.</li>
+                                    <li>Put a <b>Name</b>, Choose <b>Create Google-managed certificate</b>.</li>
+                                    <li>Put your <b>Domain Name</b>. And click <b>Create</b></li>
+                                    <li>Click <b>Done</b>.</li>
+
+
+                                    <li>Now the next step is to create a <b>Backend configuration</b>.</li>
+                                    <li>Click on <b> CREATE A BACKEND BUCKET</b>.</li>
+                                    <li>Put your bucket name and browse the desired <b>BUCKET</b>.</li>
+                                    <li>Click on <b>OK</b> and then <b>Create</b>.</li>
+
+
+                                    <img src="./assets/images/bucket-8.jpg" class="img" alt="">
+
+
+                                    <li>Now click on the <b>Load balancer</b>, Copy the Ip address from here.</li>
+
+
+                                    <li>Navigate to the <b>Cloud DNS</b>.</li>
+                                    <li>If you don't have a zone here, Please create one.</li>
+                                    <li>After creating a zone, click on the zone.</li>
+                                    <li>Click on <b>ADD STANDARD</b>.</li>
+                                    <li>Put your desired <b>Subdomain</b> name.</li>
+                                    <li>And put the <b>IP address</b> here from the last step.</li>
+                                    <li>Click <b>Create</b>.</li>
+                                </ol>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+            <footer class="link-hover">
+                <div class="container"><p class="ptb-15 color-white mt-10 b-t center-text">
+                    © 2023 - All rights reserved by Ishop
+                </p></div>
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+<head>
+    <title>Ishop - Documentation</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
+    <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:title" name="og:title" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Ishop - Documentation">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+</head>
+<body>
+<div data-server-rendered="true" id="__nuxt">
+    <div id="__layout">
+        <div class="login-with-facebook">
+            <header>
+                <div class="container">
+                    <div class="flex sided v-center">
+                        <div class="flex j-start v-center">
+                            <button data-ignore="sidebar" class="sidebar-btn"><i class="icon no-click menu-icon"> </i>
+                            </button>
+                            <a href="./index.html" aria-current="page"
+                               class="logo nuxt-link-exact-active nuxt-link-active">
+                                <img src="./assets/images/logo-black.svg" alt="Site Logo"></a></div>
+                        <div class="right-area">
+                            <a href="https://codecanyon.net/item/ishop-multivendor-laravel-vue-ecommerce-cms/43235652"
+                               target="_blank" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="flex flex-sm">
+                        <div id="sidebar" class="sidebar">
+                            <ul>
+                                <li class="title">Overview</li>
+                                <li>
+                                    <a href="./index.html"
+                                       class="nuxt-link-exact-active nuxt-link-active">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="./folder-structure.html">Folder structure</a>
+                                </li>
+                                <li class="title">Installation</li>
+
+                                <li>
+                                    <a href="./how-to-install.html">Installing, Updating & Activating</a>
+                                </li>
+                                <li>
+                                    <a href="./server-side-rendering.html">Server side rendering(Optional)</a>
+                                </li>
+                                <li>
+                                    <a href="./admin-panel-in-subdomain.html">Admin panel in Subdomain(Optional)</a>
+                                </li>
+                                <li>
+                                    <a href="./how-to-install-in-vps-server.html">Install and update in VPS server(Optional)</a>
+                                </li>
+                                <li>
+                                    <a href="./how-to-install-SSL-in-vps-server.html">Install SSL in VPS server(Optional)</a>
+                                </li>
+
+
+                                <li class="title">Registration & login</li>
+                                <li>
+                                    <a href="./smtp-configuration.html">SMTP configuration</a>
+                                </li>
+                                <li class="active">
+                                    <a href="./login-with-google.html">Login with Google</a>
+                                </li>
+                                <li>
+                                    <a href="./login-with-facebook.html">Login with Facebook</a>
+                                </li>
+
+                                <li class="title">Configuration & setup</li>
+                                <li>
+                                    <a href="./translate.html">Translate/Multi Language</a>
+                                </li>
+
+                                <li>
+                                    <a href="./countries-currencies.html">Countries & Currency List</a>
+                                </li>
+                                <li>
+                                    <a href="./file-upload.html">File upload</a>
+                                </li>
+                                <li>
+                                    <a href="./frontend.html">Frontend</a>
+                                </li>
+                                <li>
+                                    <a href="./api-configuration.html">API configuration</a>
+                                </li>
+                                <li>
+                                    <a href="./google-cloud-storage.html">Google cloud storage(Optional)</a>
+                                </li>
+
+
+                                <li class="title">Payment gateway</li>
+                                <li>
+                                    <a href="./paypal.html">Paypal</a>
+                                </li>
+                                <li>
+                                    <a href="./stripe.html">Stripe</a>
+                                </li>
+                                <li>
+                                    <a href="./razorpay.html">Razorpay</a>
+                                </li>
+
+
+
+                                <li class="title">Ishop setup</li>
+                                <li>
+                                    <a href="./admin-panel.html">Admin panel</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content">
+
+                            <h3 class="title">Login with Google</h3>
+
+                            <div class="section">
+
+                                <h4 class="semi-title">Create Google App</h4>
+
+
+                                <ol>
+                                    <li>We need google client id and secret that way we can get information of other
+                                        user.
+                                        So if you don't have google app account then you can create from here:
+                                        <a href="https://console.developers.google.com" target="_blank" class="link">
+                                            Google Developers Console</a>.
+                                    </li>
+                                    <img src="./assets/images/laravel-login-google-1.jpg" class="img">
+
+                                    <li>Now you have to click on <b>Credentials</b>.</li>
+                                    <li>Click on <b>Create Credentials</b>.</li>
+                                    <li>Click on <b>Outh Client Id</b>.</li>
+
+                                    <img src="./assets/images/laravel-login-google-2.jpg" class="img">
+
+                                    <li>
+                                        To create an OAuth client ID, you must first configure your <b>consent screen</b>
+                                    </li>
+
+                                    <li>In <b>OAuth consent screen</b> page, Select <b>External</b></li>
+                                    <li>In the next form, put your <b>App name</b></li>
+                                    <li>Upload your <b>Logo</b></li>
+                                    <li>Put your <b>Domain, privacy policy, terms of service</b> url and save.
+                                        Consent screen has been created.</li>
+
+
+                                    <li>It's time to create <b>OAuth client ID</b></li>
+                                    <li>It's time to create <b>OAuth client ID</b></li>
+                                    <li>Put Application type to <b>Web Application</b></li>
+                                    <li>Put a <b>Name</b></li>
+
+                                    <li>Put your <b>Server Url</b> in <b>Authorized JavaScript origins</b>.
+                                        eg. <i>https://www.yourdomain.com</i>
+                                    </li>
+                                    <li>Put your <b>admin panel's redirect URL</b> in <b>Authorized redirect URIs</b>.
+                                        eg. <i>https://admin.yourdomain.com/api/v1/user/social-login/callback/google</i>
+                                    </li>
+
+                                    <li>Click <b>Create</b></li>
+                                    <img src="./assets/images/laravel-login-google-3.jpg" class="img">
+                                    <li>
+                                        After create account, please copy <b>client id</b> and <b>secret</b> for later
+                                        use.
+                                    </li>
+                                </ol>
+
+
+                            </div>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Setting the Google configuration</h4>
+
+                                <p>Now it's time to put the <b>client id</b> and <b>secret</b> in the server.</p>
+
+
+                                <ol>
+                                    <li>Log in to your admin panel.</li>
+                                    <li>Go to <b>Settings > Social Login</b></li>
+
+
+                                    <li>Change the <b>Google Client Id</b> and <b>Google Client Secret</b>.
+                                    </li>
+
+                                    <img src="./assets/images/lwg-1.jpg" class="img">
+
+
+                                </ol>
+
+
+                            </div>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Clearing cache</h4>
+                                <p>Now it's time to clear the cache of the backend.</p>
+                                <ol>
+
+                                    <li>Open <b>admin.yourdomain.com/api/clear-cache</b>
+                                        in the browser. Cache has been cleared.
+                                    </li>
+
+                                </ol>
+
+
+                                <p>You can also clear the cache from the admin panel also.</p>
+
+                                <ol>
+
+                                    <li>Login to your <b>Admin panel</b>.</li>
+                                    <li>Go to <b>Setting</b> > <b>Clear cache</b>.</li>
+                                    <li>And click <b>Clear cache</b> button.
+                                        Cache has been cleared.
+                                    </li>
+
+
+                                    <img src="./assets/images/smtp-3.jpg" class="img">
+                                </ol>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="link-hover">
+                <div class="container"><p class="ptb-15 color-white mt-10 b-t center-text">
+                    © 2023 - All rights reserved by Ishop
+                </p></div>
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>
